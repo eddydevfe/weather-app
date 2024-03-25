@@ -1,9 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <!-- <button>C°</button> -->
+                <form action="" method="post" id="form">
+                    <input type="text" name="city-name" id="city-name" placeholder="Enter a city name" required autocomplete="off">
+                    <button type="submit">Submit</button>
+                </form>
+                <h1 id="city"></h1>
+                <h2 id="state"></h2>
+                <h3 id="condition"></h3>
+                <h3 id="temp"></h3>
+                <p id="feelslike"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+        </div>
+    </body>
 </html>
